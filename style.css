@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #EDF2FA;
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 15px 20px 15px;
+}
+
+.input-and-btn-box {
+    border: 1px solid slategray;
+    border-radius: 5px;
+    max-width: 550px;
+    width: 100%;
+    padding: 20px;
+    justify-self: center;
+    background-color: slategray;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.input-and-btn-box input {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+}
+
+.input-and-btn-box button {
+    border: 1px solid tomato;
+    color: white;
+    background-color: tomato;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#list-items {
+    background-color: white;
+    max-width: 550px;
+    width: 100%;
+    justify-self: center;
+}
+
+#list-items li p {
+    word-wrap: break-word;
+    border-bottom: 1px solid black;
+}
+
+#list-items li {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+    background-color: #D3E3FD;
+}
+
+#list-items li button {
+    border: 1px solid tomato;
+    color: white;
+    background-color: tomato;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    letter-spacing: 3px;
+}
+
+#list-items li button:hover,
+button:hover {
+    background-color: salmon;
+    border: 1px solid salmon;
+}
+
+#list-items li div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+@media(max-width:300px) {
+    .input-and-btn-box {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .input-and-btn-box button {
+        padding: 9px;
+        width: 100%;
+        letter-spacing: 5px;
+    }
+
+    #list-items li div {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #list-items li button {
+        width: 100%;
+    }
+}
